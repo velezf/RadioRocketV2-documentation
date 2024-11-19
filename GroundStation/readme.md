@@ -120,31 +120,33 @@ There is where I learned where to plug the 4th wire into (pin33)
 
 ## Direwolf Initial Install with its build dependencies 
 There seemed to be instructions from this everywhere. They all seemed different. I found the “User Guide” in the github repo for Direwolf and followed the linux install instructions. There are a lot of dependencies that also need to be installed. The process is laid out in the User Guide Document, the Raspberry-Pi-APRS document, and the Raspberry-Pi-SDR-IGate document. You need to read and understand all 3 of these documents. 
-Documents Here: https://github.com/wb2osz/direwolf/tree/master/doc 
-I did the install and build first. I did not touch the direwolf.conf file
-I made a new directory in home/user and added a copy of original direwolf.conf just in case
-“Snapshot” micro SD 
+* Documents Here: https://github.com/wb2osz/direwolf/tree/master/doc 
+* I did the install and build first. I did not touch the direwolf.conf file
+* I made a new directory in home/user and added a copy of original direwolf.conf just in case
+* “Snapshot” micro SD 
 
 ## RTL-SDR initial command line tools install
-Follow the instructions in Raspberry-Pi-SDR-IGate.pdf (direwolf github docs) per N3VEM blog
-I made a copy of sd.conf in the same copy directory I mentioned above
-“Snapshot” micro SD
+* Follow the instructions in Raspberry-Pi-SDR-IGate.pdf (direwolf github docs) per N3VEM blog
+* I made a copy of sd.conf in the same copy directory I mentioned above
+* “Snapshot” micro SD
 
 ## Remote Login
-Setup some flavor of remote login to run headless
-In my case I used VNC as it works natively on my main Mac. This is in sharing settings in Ubuntu 
-“Snapshot” micro SD 
-Xastir APRS Program
+* Setup some flavor of remote login to run headless
+* In my case I used VNC as it works natively on my main Mac. This is in sharing settings in Ubuntu 
+* “Snapshot” micro SD 
+
+## Xastir APRS Program
+  I plan to install this as well during this sprint more to come here
 
 ## Software Configuration 
-RTL-SDR
+## RTL-SDR
 In user home I configured the sdr.conf file per https://www.instructables.com/Build-an-Amateur-Radio-APRS-RX-Only-IGate-Using-a-/ and his blog https://qso365.co.uk/2017/02/a-guide-to-setting-up-an-aprs-receive-only-igate-using-a-raspberry-pi-and-an-rtl-sdr-dongle/ 
 This is also covered in https://github.com/wb2osz/direwolf/blob/master/doc/Raspberry-Pi-SDR-IGate.pdf
 
 ## Direwolf 
 I didn’t actually edit configure direwolf at all
-https://themodernham.com/ultimate-direwolf-tnc-installation-guide-for-windows-and-linux/#linux-install
-I did make sure it had permissions as outlined in the blog above. 
+* https://themodernham.com/ultimate-direwolf-tnc-installation-guide-for-windows-and-linux/#linux-install
+* I did make sure it had permissions as outlined in the blog above. 
   Started here: 
 `sudo usermod -a -G dialout YOURUSER
 sudo usermod -aG pulse-access YOURUSER
@@ -152,9 +154,10 @@ sudo usermod -aG audio YOURUSER
 sudo usermod -aG plugdev YOURUSER`
 
 ## Crontab
-I made a script to run the start command below and placed it in my home directory
-I then added this to the crontab -e to run every 1 minute  
-Run It 
+* I made a script to run the start command below and placed it in my home directory
+* I then added this to the crontab -e to run every 1 minute
+  
+## Run It 
 I ran this per the Raspberry-Pi-SDR-IGate.pdf instructions
 `rtl_fm -f 144.39M - | direwolf -c sdr.conf -r 24000 -D 1 -`
 I used my radio/droid from Sprint 1 to confirm the iGate was working. 
