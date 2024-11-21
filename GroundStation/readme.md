@@ -1,18 +1,18 @@
 ## The Ground Station
 ### Introduction
-The overall intent of this guide is to build the N3VEM Radio Rocket project ground station and In Rocket Telemetry capability, but over a series of increasingly complex “sprints” or 2 week blocks of work. Each sprint I accomplished spending only a couple hours a day on the project over the 2 weeks. The N3VEM ground station uses a Software Defined Radio (SDR) to collect the APRS data. It also uses a self built LoRa 70cm band radio for rocket telemetry. Both radio systems run on a single board computer (SBC) inside a DIY housing to hold all the hardware. The in rocket electronics uses a commercial off the shelf APRS radio tracker and a corresponding LoRa radio with environmental sensors. 
+The overall intent of this part of the Radio Rocket project is to build the N3VEM Radio Rocket ground station but over a series of increasingly complex “sprints” or ~2 week blocks of work. Each sprint were accomplished spending only a couple hours a day on the project over the 2 weeks. The N3VEM ground station uses a single board computer (SBC) alongside a Software Defined Radio (SDR) to collect the APRS data. It also uses LoRa breakout boards attached to the single board computer for rocket telemetry. Both radio systems run on the single board computer inside a DIY housing to hold all the hardware.  
 
 The full project is here:https://github.com/N3VEM/RadioRocketV2 
 And N3VEM’s blog here: https://n3vem.com/blog/radiorocket/ 
 
-I’ve done very little to add to this project besides provide documentation on my build which is from the perspective of a complete Noob. I do already have a Technician License (KC3ZTQ) and a NAR L1 Certification (120953). 
+KC3ZTQ provided this additional documentation on the N3VEM build from the perspective of a complete Noob. KC3ZTQ did already have a Technician License (KC3ZTQ) and a NAR L1 Certification (120953). 
 
-I’ve never done anything remotely this complex as a solo project. I’ve never done anything with single board computers (SBC) or Software Defined Radios (SDR). I had very limited to no experience with Linux, command line, and all of the software packages used in the Radio Rocket. Similarly, I had little experience with “arduino like” components, soldering, or in rocket electronics beyond basic commercially available altimeters. 
+The project does not require extensive presvious expereince. If you've never done anything with single board computers (SBC) or Software Defined Radios (SDR) that is OK. If you have limited to no experience with Linux, command line, and all of the software packages used in the Radio Rocket that is OK. Similarly, only a little experience with “arduino like” components, soldering, or in rocket electronics beyond basic commercially available altimeters is suffcient.  
 
 ### Bill of Materials for the Ground Station
-* [Libre Computer LePotato Single Board Computer](https://libre.computer/products/aml-s905x-cc/) - Say NO to Fruit Pi!
+* [Libre Computer LePotato Single Board Computer](https://libre.computer/products/aml-s905x-cc/) -
 * [Adafruit Feather 32u4 RFM96 LoRa Radio - 433MHz - RadioFruit](https://www.adafruit.com/product/3079) OR [Adafruit Feather M0 RFM96 LoRa Radio - 433MHz - RadioFruit](https://www.adafruit.com/product/3179)
-    * The M0 version is a little more powerful, but either should work fine for you. I used the 32u4 version, only because I already had it from version 1 of this project.    
+    * The M0 version is a little more powerful, but either should work fine for you.    
 * [uFL SMT antenna connector for above](https://www.adafruit.com/product/1661)
 * [uFL to SMA jumper](https://www.adafruit.com/product/851)
 * [SMA RF Jumpers](https://amzn.to/3jMf6Mw)
@@ -34,13 +34,13 @@ I’ve never done anything remotely this complex as a solo project. I’ve never
 * Zip Ties, Zip Tie Mounts
 * [Enclosure](https://amzn.to/3HPVTBr)
 
-# Sprint 1 -Demonstrate COTS APRS TX/RX capability
+# Sprint 1 -Demonstrate Commerical Off The Shelf APRS TX/RX Capability
 
-Purpose: Before getting overly committed to the project I wanted to confirm I could handle the basics of APRS. I also wanted to create a positive control for the in rocket APRS tracker. I also thought this was a mid way step to the SDR APRS radio using Direwolf and Xastir/PinpointAPRS. 
+Purpose: Before getting overly committed to the project you may want to confirm you can handle the basics of APRS. You may slso want to create a positive control for the in rocket APRS tracker and ground station. This build is a mid way step to the SDR APRS radio using Direwolf and YAAC or PinpointAPRS. 
 
 ## Bill of Materials:
 ### Hardware
-* Baofeng UV-5R (I have an old UV-5R+ in my case)
+* Baofeng UV-5R (I had an old UV-5R+ in my case)
 * Old Android Phone ( I bought a $30 Kyocera DuraForce Pro 2 E6920 64GB off ebay)
 * BTECH APRS-K1 Cable (https://www.amazon.com/dp/B01LMIBAZW) 
 * Baofeng CHIRP programming cable
