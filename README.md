@@ -1,12 +1,11 @@
 # Radio Rocket Version 2 - Code Name Odori
-Repository for version 2 of the radio rocket!
-I'm just starting to capture details here.  Plan is to have this mostly fleshed out ahead of the Ham Radio QSO Today Expo in March, where I will be doing a presentation on this project.
+This is the repository for version 2 of the N3VEM radio rocket!
 
-This repository contains information related to version 2 of my [radio rocket project.](https://n3vem.com/rocket)
+This repository contains information related to version 2 of the [radio rocket project.](https://n3vem.com/rocket)
 
 More specific details can be found in the readme within each folder, for the various components of the rocket.
 
-Please note that this repository isn't step-by-step directions. It's more of a 'show them where to fish' thing, so if you are wanting to replicate this project, and have any questions, please feel free to reach out to me!
+Please note that this repository isn't step-by-step directions. However, KC3ZTQ has updated the documentation to make it easier to follow along. If you are wanting to replicate this project, and have any questions, please feel free to reach out to N3VEM.
 
 ## APRS in the Rocket
 APRS tracking is used in the rocket primarily for position data, mapping, and tracking. Track how high your rocket went, and how far away it's packets were received. The APRS sled can be done stand-alone without the rest of the project, if you simply want to beacon packets, and then check aprs.fi for data. Building the APRS tracker only would rely on their being at least 1 I-Gate within range of your launch site.
