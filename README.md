@@ -1,4 +1,4 @@
-RadioRocketV2 📡🚀
+# RadioRocketV2 📡🚀
 
 RadioRocketV2 is an open-source project designed around the configuration and integration of amateur radio systems using modern digital tools into mid and high power model rockets. Built by N3VEM, with contributions from the community, this project empowers ham radio and rocket enthusiasts to combine their interest. 
 
