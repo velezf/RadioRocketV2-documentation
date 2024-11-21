@@ -123,7 +123,8 @@ There seemed to be instructions from this everywhere. They all seemed different.
 * Documents Here: https://github.com/wb2osz/direwolf/tree/master/doc 
 * I did the install and build first. I did not touch the direwolf.conf file
 * I made a new directory in home/user and added a copy of original direwolf.conf just in case
-* “Snapshot” micro SD 
+* “Snapshot” micro SD
+* run it `rtl_fm -f 144.39M - | direwolf -c sdr.conf -r 24000 -D 1 -`
 
 ## RTL-SDR initial command line tools install
 * Follow the instructions in Raspberry-Pi-SDR-IGate.pdf (direwolf github docs) per N3VEM blog
@@ -135,8 +136,13 @@ There seemed to be instructions from this everywhere. They all seemed different.
 * In my case I used VNC as it works natively on my main Mac. This is in sharing settings in Ubuntu 
 * “Snapshot” micro SD 
 
-## Xastir APRS Program
-  I plan to install this as well during this sprint more to come here
+## YAAC Program
+Install directions here: https://themodernham.com/aprs-on-linux-with-yaac-yet-another-aprs-client-and-direwolf/
+I did have to install 
+This gave me the APRS mapping capability on my SBC as all RX i-gate work is being done via direwolf.
+
+## Node Red
+Install directions here: https://nodered.org/docs/getting-started/raspberrypi
 
 ## Software Configuration 
 ## RTL-SDR
