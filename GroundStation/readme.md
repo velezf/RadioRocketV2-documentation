@@ -167,3 +167,29 @@ sudo usermod -aG plugdev YOURUSER`
 I ran this per the Raspberry-Pi-SDR-IGate.pdf instructions
 `rtl_fm -f 144.39M - | direwolf -c sdr.conf -r 24000 -D 1 -`
 I used my radio/droid from Sprint 1 to confirm the iGate was working. 
+
+## Looking Forward to Sprint 3
+This entire setup was setup and run spread across the desk. At this point I ordered all the parts for the LoRa ground station,the parts for the LoRa Rocket, and the materials to move the ground station into the project box. 
+
+# Sprint 3 Project Box Build - APRS Radio Into Project Box and LoRa Ground Station build
+ All the hardware parts for this part of the project are listed above. I would expect alot of user specific customization on the project box depending on your specfic use of the project. For example, I added some extra ports to the box so I didnt always need to use it headless. I also added a fancy SPDT switch. You also need two LoRa radios to fully test the them, so I partially built the Teensy LoRa radio but did wire in the sensors yet. 
+
+ ## Extra tools for Project Box
+ * I found this stepped drill bit helpful: https://www.amazon.com/dp/B089T8HJHF?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
+   I used it to drill all the SMA connectors, 12v power, and USB holes.
+ * I used a No43 Drill bit for the M2.5 nylon mounting hardware : https://www.amazon.com/gp/product/B0849LDH5P/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+ * Running the Ground Station LoRa from Serial I needed this: https://www.amazon.com/dp/B013G4EAEI?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
+ * I powered my Libre Le Potato from the transformer with one of these: https://www.amazon.com/gp/product/B0BZWMWVDT/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&th=1
+
+## Adafruit Feather M0 RFM96 LoRa Radio - 433MHz Build 
+I didnt do anything to this beside solder the uFL SMT Antenna Connector on and solder stackable headers on. I powered it with the microUSB to USB-A above into the Le Potato. 
+
+## Arduino IDE 
+I used these sites and N3VEM sketches. I started with basics like blinking LEDs and then printing to serial and then there Hello World LoRa to LoRa messages. 
+* https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module/setup#https-slash-slash-adafruit-dot-github-dot-io-slash-arduino-board-index-slash-package-adafruit-index-dot-json-2612538
+* https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/master/Adafruit%20Feather%20M0%20RFM9x%20Pinout.pdf
+
+I added the boards to my IDE from these: 
+* https://www.pjrc.com/teensy/td_download.html
+* https://adafruit.github.io/arduino-board-index/package_adafruit_index.json for the feather
+
