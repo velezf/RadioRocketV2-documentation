@@ -188,6 +188,7 @@ I didnt do anything to this beside solder the uFL SMT Antenna Connector on and s
 I used these sites and N3VEM sketches. I started with basics like blinking LEDs and then printing to serial and then there Hello World LoRa to LoRa messages. 
 * https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module/setup#https-slash-slash-adafruit-dot-github-dot-io-slash-arduino-board-index-slash-package-adafruit-index-dot-json-2612538
 * https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/master/Adafruit%20Feather%20M0%20RFM9x%20Pinout.pdf
+* https://learn.adafruit.com/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts/using-the-rfm69-radio I used this the most to get the basics of the radio working
 
 I added the boards to my IDE from these: 
 * https://www.pjrc.com/teensy/td_download.html
